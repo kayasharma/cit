@@ -1,0 +1,229 @@
+.heading {
+  text-align: center;
+  padding-bottom: 2rem;
+  color: white;
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+.heading span {
+  color: var(--theme-color);
+  text-transform: uppercase;
+}
+
+/* Home Section */
+.home .content {
+  text-align: center;
+  padding-top: 6rem;
+  margin: 2rem auto;
+  max-width: 70rem;
+}
+
+.home .content h3 {
+  color: #fff;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+}
+
+.home .content h3 span {
+  color: var(--theme-color);
+}
+
+.home .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  background: #666;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.home .btn:hover {
+  background: var(--theme-color);
+}
+
+/* Swiper Styling */
+.home .home-slider {
+  width: 100%;
+  height: 50rem; /* Adjust height as needed */
+  overflow: hidden;
+  position: relative;
+}
+
+.home .home-slider .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-radius: 0.5rem;
+  transition: transform 0.5s ease-in-out; /* Smooth transition effect */
+}
+
+.home .home-slider .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+/* Service Section */
+.service {
+  padding: 4rem 2rem;
+  background-color: #222;
+}
+
+.service .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1.5rem;
+}
+
+.service .box-container .box {
+  border-radius: 0.5rem;
+  background: #333;
+  text-align: center;
+  padding: 2.5rem;
+}
+
+.service .box-container .box i {
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  background: var(--theme-color);
+  color: #fff;
+}
+
+.service .box-container .box h3 {
+  font-size: 2rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.service .box-container .box p {
+  display: none; /* Hide the paragraph */
+}
+
+.service .box-container .box .btn {
+  margin-top: 1.5rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  background: #666;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.service .box-container .box .btn:hover {
+  background: var(--theme-color);
+}
+
+/* About Section */
+.about {
+  padding: 5rem 2rem;
+  background: #111;
+}
+
+.about .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+/* Ensure that the content is properly centered */
+/* Ensure that the content is properly centered */
+.about .row .content {
+  flex: 1 1 45rem;
+  display: flex; /* Add flexbox */
+  flex-direction: column; /* Stack children (heading, paragraph, button) vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center the text */
+}
+
+/* Style for the heading */
+.about .row .content h3 {
+  font-size: 3.5rem;
+  color: #fff;
+  margin-bottom: 1rem; /* Add some spacing below the heading */
+}
+
+/* Style for the paragraph */
+.about .row .content p {
+  font-size: 1.5rem;
+  color: #eee;
+  padding: 1rem 0;
+  line-height: 2;
+  max-width: 800px; /* Optional: Control the width of the paragraph */
+}
+
+/* Button styling */
+.about .row .content .btn {
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  background: #666;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Button hover state */
+.about .row .content .btn:hover {
+  background: var(--theme-color);
+}
+@media (max-width: 768px) {
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border-top: 0.1rem solid #222;
+    background: #333;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .fa-times {
+    transform: rotate(180deg);
+  }
+
+  .header .navbar a {
+    display: flex;
+    background: #222;
+    border-radius: 0.5rem;
+    padding: 1.3rem;
+    margin: 1.3rem;
+    font-size: 2rem;
+  }
+
+  .home .content h3 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .home .home-slider .swiper-slide {
+    width: 27rem;
+  }
+
+  .contact form .inputBox input {
+    width: 100%;
+  }
+}
