@@ -1,0 +1,154 @@
+:root {
+  --second-bg-color: #131313;
+  --main-color: #00ffee;
+  --text-color: white;
+  --bg-color: #080808;
+}
+
+.headingg {
+  font-size: 8rem;
+  text-align: center;
+  margin: 5rem 0;
+  color: white;
+}
+
+.education {
+  padding: 100px 15px;
+  background: var(--second-bg-color);
+}
+
+.education h2 {
+  margin-bottom: 5rem;
+  color: white;
+}
+
+.education h3 {
+  color: white;
+}
+
+.education p {
+  color: white;
+}
+
+.timeline-items {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 300px;
+  position: relative;
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  perspective: 1000px; /* 3D perspective for flip effect */
+}
+
+.flip-card-front img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.timeline-items::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background: var(--main-color);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.flip-card {
+  width: 500px;
+  height: 450px;
+  position: relative;
+  transform-style: preserve-3d; /* Ensure 3D effect for child elements */
+  transition: transform 0.6s; /* Smooth flip transition */
+}
+
+.flip-card:hover {
+  transform: rotateY(180deg); /* Flip the card on hover */
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hide the back when flipped */
+}
+
+.flip-card-front {
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flip-card-back {
+  background-color: var(--bg-color);
+  color: white;
+  transform: rotateY(180deg); /* Initially rotate the back side */
+  padding: 20px;
+  border: 3px solid var(--main-color);
+  box-shadow: 7px 7px 7px rgba(0, 255, 236, 0.8),
+    -7px -7px 5px rgba(0, 255, 236, 0.8);
+}
+
+.timeline-content {
+  background-color: var(--bg-color);
+  border: 3px solid var(--main-color);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.timeline-content h3 {
+  font-weight: 700;
+  font-size: 30px;
+  padding-right: 100px;
+  padding-top: 0.455px;
+}
+
+.timeline-content a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  font-size: 25px;
+  flex-direction: row;
+  margin-left: 150px;
+  margin-top: 15px;
+}
+
+.timeline-content a:hover {
+  color: var(--main-color); /* Changes text color on hover */
+  text-decoration: none; /* Removes underline on hover */
+}
+
+/* Fix the alternating left and right positioning */
+.timeline-item:nth-child(odd) {
+  justify-content: flex-start; /* Keep odd items to the left */
+}
+
+.timeline-item:nth-child(even) {
+  justify-content: flex-end; /* Move even items to the right */
+}
+
+/* This ensures the cards are aligned and can flip properly */
+
+.timeline-item:nth-child(odd) .flip-card-front {
+  background-color: var(--bg-color);
+}
+
+.timeline-item:nth-child(even) .flip-card-front {
+  background-color: var(
+    --main-color
+  ); /* Different color for right-aligned items */
+}

@@ -19,7 +19,7 @@ import Special from "./pages/Special";
 import Onspot from "./pages/Onspot";
 import Photography from "./pages/Photography";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import Timeline from "./pages/Timeline";
 function App() {
   return (
     <Router>
@@ -29,6 +29,7 @@ function App() {
           <Route path="/" element={<Home />} /> {/* Home page route */}
           <Route path="/pricing" element={<Pricing />} />{" "}
           {/* Pricing page route */}
+          <Route path="/Timeline" element={<Timeline />} />
           <Route path="/Mechanical" element={<Mechanical />} />
           <Route path="/Software" element={<Software />} />
           <Route path="/Civil" element={<Civil />} />

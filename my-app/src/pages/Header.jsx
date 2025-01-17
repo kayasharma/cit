@@ -18,7 +18,7 @@ const Header = () => {
 
       <nav className={`navbar ${menuActive ? "active" : ""}`}>
         <a href="#home">home</a>
-        <a href="#service">Events</a>
+        <a href="/Timeline">Events</a>
         <a href="#work">Workshops</a>
         <a href="#about">about</a>
         <a href="#contact">contact us</a>

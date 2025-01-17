@@ -1,5 +1,5 @@
 import React from "react";
-import "./Mechanical.css"; // Ensure the CSS is imported
+import "./Pricing.css";
 
 const Mechanical = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import Home1 from "../images/home1.jpg";
+
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "./Home.css"; // Import the CSS file for styling
 import { Swiper, SwiperSlide } from "swiper/react"; // Import Swiper components
@@ -41,15 +41,9 @@ const Home = () => {
           autoplay={{ delay: 3000 }} // Auto-slide after 3 seconds
           className="home-slider"
         >
-          <SwiperSlide>
-            <img src={Home1} alt="Event 1" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={Home1} alt="Event 2" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={Home1} alt="Event 3" />
-          </SwiperSlide>
+          <SwiperSlide></SwiperSlide>
+
+          <SwiperSlide></SwiperSlide>
           {/* Add more slides as needed */}
         </Swiper>
       </section>
