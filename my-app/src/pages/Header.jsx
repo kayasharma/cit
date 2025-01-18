@@ -17,11 +17,11 @@ const Header = () => {
       </a>
 
       <nav className={`navbar ${menuActive ? "active" : ""}`}>
-        <a href="#home">home</a>
-        <a href="/Timeline">Events</a>
-        <a href="#work">Workshops</a>
-        <a href="#about">about</a>
-        <a href="#contact">contact us</a>
+        <a href="/Home">HOME</a>
+        <a href="/Timeline">EVENTS</a>
+        <a href="#work">WORKSHOPS</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT US</a>
       </nav>
 
       <div

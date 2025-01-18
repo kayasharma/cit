@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Header from "./pages/Header";
+import Rotate from "./pages/Rotate";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Import necessary components from react-router-domimpo
 import Home from "./pages/Home";
 import Pricing from "./pages/Pricing"; // Import the Pricing page component
@@ -44,6 +45,7 @@ function App() {
           <Route path="/Special" element={<Special />} />
           <Route path="/Onspot" element={<Onspot />} />
           <Route path="/Photography" element={<Photography />} />
+          <Route path="/Rotate" element={<Rotate />} />
         </Routes>
       </div>
     </Router>

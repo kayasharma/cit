@@ -37,7 +37,8 @@ section {
   left: 0;
   right: 0;
   z-index: 10000;
-  background: #333;
+  background-color: rgba(0, 0, 0, 0.6);
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,16 +49,22 @@ section {
   font-weight: bolder;
   color: #fff;
   font-size: 2.5rem;
+  text-decoration: none;
+  font-family: "robote";
 }
 
 .header .logo span {
-  color: var(--theme-color);
+  color: white;
+  font-family: "robote";
 }
 
 .header .navbar a {
   font-size: 1.7rem;
   color: #fff;
-  margin-left: 2rem;
+  text-decoration: none;
+  margin-left: 3rem;
+  font-family: "robote";
+  font-weight: 700;
 }
 
 .header .navbar a:hover {

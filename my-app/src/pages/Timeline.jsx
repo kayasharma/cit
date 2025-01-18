@@ -46,116 +46,64 @@ const Timeline = () => {
         <div className="timeline-item">
           <div className="flip-card">
             <div className="flip-card-front">
-              <div className="timeline-date">2</div>
-              <div className="timeline-content">
-                <h3>pahal Events</h3>
-              </div>
+              <img src="/images/bluewhite.png" alt="" />
             </div>
             <div className="flip-card-back">
               <div className="timeline-content">
-                <h3>pahal Events</h3>
-                <a href="/">project presentation</a>
-                <a href="/">drone racing</a>
+                <h3>Robotics Events</h3>
+                <a href="/">robo race</a>
+                <a href="/">robo war</a>
+                <a href="/">robo soccer</a>
+                <a href="/">line follower</a>
+                <a href="/">maze solver</a>
               </div>
             </div>
           </div>
         </div>
+
+        {/* Timeline Item 2 */}
         <div className="timeline-item">
           <div className="flip-card">
             <div className="flip-card-front">
-              <div className="timeline-date">2</div>
-              <div className="timeline-content">
-                <h3>mechanical Events</h3>
-              </div>
+              <img src="/images/pink.png" alt="" />
             </div>
             <div className="flip-card-back">
               <div className="timeline-content">
-                <h3>mechanical Events</h3>
-                <a href="/">cad championship</a>
-                <a href="/">fun cart</a>
-                <a href="/">slow cycle</a>
+                <h3>software Events</h3>
+                <a href="/">hackathon</a>
+                <a href="/">national quiz</a>
+                <a href="/">code hunter</a>
+                <a href="/">code bingo</a>
+                <a href="/">best googler</a>
               </div>
             </div>
           </div>
         </div>
+
         <div className="timeline-item">
           <div className="flip-card">
             <div className="flip-card-front">
-              <div className="timeline-date">2</div>
-              <div className="timeline-content">
-                <h3>civil Events</h3>
-              </div>
+              <img src="/images/bluewhite.png" alt="" />
             </div>
             <div className="flip-card-back">
               <div className="timeline-content">
-                <h3>civil Events</h3>
-                <a href="/">bgmi</a>
-                <a href="/">free fire</a>
+                <h3>Robotics Events</h3>
+                <a href="/">robo race</a>
+                <a href="/">robo war</a>
+                <a href="/">robo soccer</a>
+                <a href="/">line follower</a>
+                <a href="/">maze solver</a>
               </div>
             </div>
           </div>
         </div>
+
         <div className="timeline-item">
           <div className="flip-card">
             <div className="flip-card-front">
-              <div className="timeline-date">2</div>
-              <div className="timeline-content">
-                <h3>civil Events</h3>
-              </div>
+              <img src="/images/bluewhite.png" alt="" />
             </div>
             <div className="flip-card-back">
-              <div className="timeline-content">
-                <h3>civil Events</h3>
-                <a href="/">arch mania</a>
-                <a href="/">urban planning</a>
-                <a href="/">tic-tac-toe</a>
-                <a href="/">jenga block</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="timeline-item">
-          <div className="flip-card">
-            <div className="flip-card-front">
-              <div className="timeline-date">2</div>
-              <div className="timeline-content">
-                <h3>civil Events</h3>
-              </div>
-            </div>
-            <div className="flip-card-back">
-              <div className="timeline-content">
-                <h3>civil Events</h3>
-                <a href="/">arch mania</a>
-                <a href="/">urban planning</a>
-                <a href="/">tic-tac-toe</a>
-                <a href="/">jenga block</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="timeline-item">
-          <div className="flip-card">
-            <div className="flip-card-front">
-              <div className="timeline-date">2</div>
-              <div className="timeline-content">
-                <h3>Entertainment Events</h3>
-              </div>
-            </div>
-            <div className="flip-card-back">
-              <div className="timeline-content">
-                <h3> Entertainment Events</h3>
-                <a href="/">beat the street</a>
-                <a href="/">dance</a>
-                <a href="/">nukkad natak</a>
-                <a href="/">open mic</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="timeline-item">
-          <div className="flip-card">
-            <div className="flip-card-front">
-              <div className="timeline-date">2</div>
               <div className="timeline-content">
                 <h3>law Events</h3>
               </div>
@@ -175,9 +123,12 @@ const Timeline = () => {
         <div className="timeline-item">
           <div className="flip-card">
             <div className="flip-card-front">
-              <div className="timeline-date">2</div>
+              <img src="/images/bluewhite.png" alt="" />
+            </div>
+            <div className="flip-card-back">
               <div className="timeline-content">
                 <h3>e-sports Events</h3>
+                <a href="/">event</a>
               </div>
             </div>
           </div>
@@ -185,7 +136,9 @@ const Timeline = () => {
         <div className="timeline-item">
           <div className="flip-card">
             <div className="flip-card-front">
-              <div className="timeline-date">2</div>
+              <img src="/images/bluewhite.png" alt="" />
+            </div>
+            <div className="flip-card-back">
               <div className="timeline-content">
                 <h3>enterpreneurship Events</h3>
               </div>
@@ -203,7 +156,9 @@ const Timeline = () => {
         <div className="timeline-item">
           <div className="flip-card">
             <div className="flip-card-front">
-              <div className="timeline-date">2</div>
+              <img src="/images/bluewhite.png" alt="" />
+            </div>
+            <div className="flip-card-back">
               <div className="timeline-content">
                 <h3>management Events</h3>
               </div>
@@ -223,7 +178,9 @@ const Timeline = () => {
         <div className="timeline-item">
           <div className="flip-card">
             <div className="flip-card-front">
-              <div className="timeline-date">2</div>
+              <img src="/images/bluewhite.png" alt="" />
+            </div>
+            <div className="flip-card-back">
               <div className="timeline-content">
                 <h3>on-spot Events</h3>
               </div>
@@ -243,7 +200,9 @@ const Timeline = () => {
         <div className="timeline-item">
           <div className="flip-card">
             <div className="flip-card-front">
-              <div className="timeline-date">2</div>
+              <img src="/images/bluewhite.png" alt="" />
+            </div>
+            <div className="flip-card-back">
               <div className="timeline-content">
                 <h3>pharmacy Events</h3>
               </div>
@@ -263,7 +222,9 @@ const Timeline = () => {
         <div className="timeline-item">
           <div className="flip-card">
             <div className="flip-card-front">
-              <div className="timeline-date">2</div>
+              <img src="/images/bluewhite.png" alt="" />
+            </div>
+            <div className="flip-card-back">
               <div className="timeline-content">
                 <h3>photography Events</h3>
               </div>
@@ -280,7 +241,9 @@ const Timeline = () => {
         <div className="timeline-item">
           <div className="flip-card">
             <div className="flip-card-front">
-              <div className="timeline-date">2</div>
+              <img src="/images/bluewhite.png" alt="" />
+            </div>
+            <div className="flip-card-back">
               <div className="timeline-content">
                 <h3>special Events</h3>
               </div>
@@ -299,7 +262,9 @@ const Timeline = () => {
         <div className="timeline-item">
           <div className="flip-card">
             <div className="flip-card-front">
-              <div className="timeline-date">2</div>
+              <img src="/images/bluewhite.png" alt="" />
+            </div>
+            <div className="flip-card-back">
               <div className="timeline-content">
                 <h3>sports Events</h3>
               </div>
@@ -315,9 +280,8 @@ const Timeline = () => {
             </div>
           </div>
         </div>
-
-        {/* Add more timeline items as needed */}
       </div>
+      {/* Add more timeline items as needed */}
     </section>
   );
 };
