@@ -297,6 +297,53 @@
   opacity: 0;
   animation: showContent 0.5s 1s linear 1 forwards;
 }
+
+section {
+  padding: 2rem 9%;
+}
+
+.headerr {
+  position: relative; /* Makes the header flow naturally in the document */
+  top: 0; /* Ensure the position is not fixed */
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 9%;
+  border-radius: 20px;
+  margin-top: 2rem;
+  /* Adjust this value based on the height of the carousel */
+}
+
+.headerr .logoo {
+  font-weight: bolder;
+  color: #fff;
+  font-size: 2.5rem;
+  text-decoration: none;
+  font-family: "robote";
+}
+
+.headerr .logoo span {
+  color: white;
+  font-family: "robote";
+}
+
+.headerr .navbarr a {
+  font-size: 1.7rem;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 3rem;
+  font-family: "robote";
+  font-weight: 700;
+}
+
+.headerr .navbarr a:hover {
+  color: var(--theme-color);
+}
+
 @keyframes showContent {
   to {
     transform: translateY(0px);

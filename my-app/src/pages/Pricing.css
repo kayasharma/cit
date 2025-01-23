@@ -1,145 +1,186 @@
-/* General Styling */
-:root {
-  --theme-color: #3867d6;
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0d1b2a;
+  color: #333;
 }
-.price {
-  padding: 4rem 2rem;
-  background-color: #222;
-  margin-top: 6rem; /* Add space to prevent content from being hidden behind the fixed navbar */
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 50px auto;
+  background: transparent;
+  box-shadow: inset 0px 12px 25px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.heading {
-  text-align: center;
-  padding-bottom: 2rem;
+.left-section {
+  flex: 1;
+  background: #0d1b2a;
+}
+
+.icon {
+  width: 400px; /* Ensure this size matches your image dimensions */
+  height: 500px;
+}
+
+.icon-image {
+  width: 400px; /* Fit the image inside the icon container */
+  height: 500px; /* Maintain the icon size */
+  object-fit: cover; /* Ensure the image fits and doesn't stretch */
+}
+
+.right-section {
+  flex: 2;
+  padding: 40px;
+  text-align: left;
+}
+
+.right-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  font-family: "robote";
+  font-weight: 700;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.tags .price {
+  background: #0d6efd;
   color: #fff;
+  margin-top: 40px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
+.tags .category {
+  background: #e9ecef;
+  padding: 5px 10px;
+  margin-left: 40px;
   text-transform: uppercase;
-  font-size: 4rem;
+  margin-top: 40px;
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 1.9rem;
+  cursor: pointer;
+}
+.tags .category:hover {
+  background-color: #0d6efd;
+
+  color: #e9ecef;
+}
+.tags .author {
+  font-size: 1.9rem;
+  color: black;
+  margin-top: 40px;
+  margin-left: 30px;
 }
 
-.heading span {
-  color: var(--theme-color);
-  text-transform: uppercase;
-}
-
-/* Pricing Section */
-
-.price .box-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Display 3 items per row */
-  gap: 1.5rem; /* Adjust gap between items */
-}
-
-.price .box-container .box {
-  padding: 2rem;
-  background: #333;
-  border-radius: 0.5rem;
-  text-align: center;
-}
-
-.price .box-container .box .title {
-  background: var(--theme-color);
+.ticket-btn {
+  background: #6610f2;
   color: #fff;
-  padding: 1.5rem 0;
+  margin-top: 30px;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.ticket-btn:hover {
+  background-color: white;
+  color: #6610f2;
+}
+.details p {
+  margin: 5px 0;
   font-size: 2rem;
 }
 
-.price .box-container .box .amount {
-  color: #fff;
-  padding-top: 2rem;
-  font-size: 4rem;
+.description h3 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
-.price .box-container .box ul {
-  list-style-type: none;
-  padding: 1rem 0;
+.description p {
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
-.price .box-container .box ul li {
-  font-size: 1.5rem;
-  color: #eee;
-  padding: 1rem 0;
+.description a {
+  color: #0d6efd;
+  text-decoration: none;
+  font-size: 1rem;
 }
-
-.price .box-container .box ul li i {
-  color: var(--theme-color);
-  padding-right: 0.5rem;
-}
-
-/* Button Styling inside Pricing Page */
-.price .box-container .box .btn {
-  margin-top: 2rem;
-  display: inline-block;
-  padding: 1rem 3rem;
-  font-size: 1.8rem;
-  border-radius: 0.5rem;
-  background: #666;
-  color: #fff;
-  cursor: pointer;
-  font-weight: 600;
-  text-decoration: none; /* Ensure it behaves like a button, not a link */
-}
-
-.price .box-container .box .btn:hover {
-  background: var(--theme-color);
-}
-.rules-link {
-  color: #007bff; /* Blue color */
-  font-weight: bold; /* Bold text */
-  text-decoration: underline; /* Underline the link */
-  transition: color 0.3s ease; /* Smooth transition on hover */
-}
-
-.rules-link:hover {
-  color: #0056b3; /* Darker blue on hover */
-  text-decoration: none; /* Remove underline on hover */
-}
-
 @media (max-width: 768px) {
-  .header .navbar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    border-top: 0.1rem solid #222;
-    background: #333;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  .container {
+    flex-direction: column;
+    margin: 20px auto;
   }
 
-  .header .navbar.active {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  .icon {
+    width: 100%;
+    height: auto;
   }
 
-  .fa-times {
-    transform: rotate(180deg);
+  .icon-image {
+    width: 100%;
+    height: auto;
   }
 
-  .header .navbar a {
-    display: flex;
-    background: #222;
-    border-radius: 0.5rem;
-    padding: 1.3rem;
-    margin: 1.3rem;
+  .right-section {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .right-section h2 {
+    font-size: 2.4rem;
+  }
+
+  .tags {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tags .category {
+    font-size: 0.8rem;
+  }
+}
+
+/* Mobile devices (480px and up) */
+@media (max-width: 480px) {
+  .right-section h2 {
     font-size: 2rem;
   }
 
-  .home .content h3 {
-    font-size: 4rem;
-  }
-  .price .box-container {
-    grid-template-columns: 1fr; /* 1 item per row on smaller screens */
-  }
-}
-
-@media (max-width: 450px) {
-  html {
-    font-size: 50%;
+  .tags {
+    flex-direction: column;
+    gap: 8px;
   }
 
-  .home .home-slider .swiper-slide {
-    width: 27rem;
+  .tags .price,
+  .tags .category,
+  .tags .author {
+    font-size: 0.8rem;
   }
 
-  .contact form .inputBox input {
-    width: 100%;
+  .ticket-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .details p,
+  .description p {
+    font-size: 0.9rem;
   }
 }

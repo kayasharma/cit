@@ -1,8 +1,10 @@
 .App {
   text-align: center;
-  background-color: black;
+  background-color: white;
 }
-
+.full-height {
+  height: 100vh; /* Use this class to apply the full height only when needed */
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

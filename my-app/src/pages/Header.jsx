@@ -17,7 +17,7 @@ const Header = () => {
       </a>
 
       <nav className={`navbar ${menuActive ? "active" : ""}`}>
-        <a href="/Home">HOME</a>
+        <a href="/">HOME</a>
         <a href="/Timeline">EVENTS</a>
         <a href="#work">WORKSHOPS</a>
         <a href="#about">ABOUT</a>
